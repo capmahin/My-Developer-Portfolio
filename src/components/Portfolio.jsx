@@ -17,7 +17,7 @@ const Portfolio = () => {
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
         {/* Whole things destructure for card  */}
             <div className=" shadow-md shadow-purple-700 rounded-lg">
-                <img src={reactWeather} alt="" />
+                <img src={reactWeather} alt="" className="rounded-md duration-200 hover:scale-105"/>
                 <div>
                     <button>Demo</button>
                     <button>Code</button>
