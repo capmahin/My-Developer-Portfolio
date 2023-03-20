@@ -14,9 +14,9 @@ const Portfolio = () => {
                 <p className="text-4xl font-bold inline border-b-4 border-purple-600">Portfolio</p>
                 <p className="py-6">Check out some of my work right here</p>
             </div>
-            <div>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
         {/* Whole things destructure for card  */}
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <div className=" shadow-md shadow-purple-700 rounded-lg">
                 <img src={reactWeather} alt="" />
                 <div>
                     <button>Demo</button>
