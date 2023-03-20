@@ -7,6 +7,44 @@ import reactSmooth from '../assets/portfolio/reactSmooth.jpg';
 import reactWeather from '../assets/portfolio/reactWeather.jpg';
 
 const Portfolio = () => {
+    const portfolios=[
+        {
+            id:1,
+            src:arrayDestruct,
+            href: 'https://github.com/capmahin/Bike-manufacture-center',
+            href_1: 'https://bike-manufacture-center.vercel.app/'
+        },
+        {
+            id:2,
+            src:reactParallax,
+            href: 'https://github.com/capmahin/Bike-manufacture-center',
+            href_1: 'https://bike-manufacture-center.vercel.app/'
+        },
+        {
+            id:3,
+            src:reactSmooth,
+            href: 'https://github.com/capmahin/Bike-manufacture-center',
+            href_1: 'https://bike-manufacture-center.vercel.app/'
+        },
+        {
+            id:4,
+            src:reactWeather,
+            href: 'https://github.com/capmahin/Bike-manufacture-center',
+            href_1: 'https://bike-manufacture-center.vercel.app/'
+        },
+        {
+            id:5,
+            src:navbar,
+            href: 'https://github.com/capmahin/Bike-manufacture-center',
+            href_1: 'https://bike-manufacture-center.vercel.app/'
+        },
+        {
+            id:6,
+            src:installNode,
+            href: 'https://github.com/capmahin/Bike-manufacture-center',
+            href_1: 'https://bike-manufacture-center.vercel.app/'
+        },
+    ]
   return (
     <div name="portfolio" className="bg-gradient-to-b from-black to-purple-800 w-full text-white md:h-screen">
         <div className="max-w-screen-lg pb-4 mx-auto flex flex-col justify-center w-full h-full">
@@ -14,17 +52,28 @@ const Portfolio = () => {
                 <p className="text-4xl font-bold inline border-b-4 border-purple-600">Portfolio</p>
                 <p className="py-6">Check out some of my work right here</p>
             </div>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-        {/* Whole things destructure for card  */}
-            <div className=" shadow-md shadow-purple-700 rounded-lg">
-                <img src={reactWeather} alt="" className="rounded-md duration-200 hover:scale-105"/>
+
+          
+         
+         <div  className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+         {
+            portfolios.map(({id,src,href, href_1})=>(
+                <div key={id} className=" shadow-md shadow-purple-700 rounded-lg">
+                <img src={src} alt="" className="rounded-md duration-200 hover:scale-105"/>
                 <div className="flex items-center justify-center">
-                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Demo</button>
-                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">Code</button>
+                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"><a href={href_1} target="_blank"
+              rel="noreferrer">Demo</a></button>
+                    <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"><a href={href} target="_blank"
+              rel="noreferrer">Code</a> </button>
                 </div>
             </div>
+            ))
+           }
+        {/* Whole things destructure for card  */}
+           
 
             </div>
+            
         </div>
     </div>
   )
