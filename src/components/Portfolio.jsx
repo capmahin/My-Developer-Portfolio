@@ -12,11 +12,11 @@ const Portfolio = () => {
         <div className="max-w-screen-lg pb-4 mx-auto flex flex-col justify-center w-full h-full">
             <div className="pb-8">
                 <p className="text-4xl font-bold inline border-b-4 border-purple-600">Portfolio</p>
-                <p>Check out some of my work right here</p>
+                <p className="py-6">Check out some of my work right here</p>
             </div>
             <div>
         {/* Whole things destructure for card  */}
-            <div>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
                 <img src={reactWeather} alt="" />
                 <div>
                     <button>Demo</button>
