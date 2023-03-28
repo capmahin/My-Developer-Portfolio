@@ -7,6 +7,7 @@ import nextjs from "../assets/nextjs.png";
 import graphql from "../assets/graphql.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
+;
 
 const Experience = () => {
   const techs = [
@@ -60,7 +61,14 @@ const Experience = () => {
     },
   ];
   return (
-    <div>Experience</div>
+    <div>
+      <div>
+        <div>
+          <p>Experience</p>
+          <p>These are the technologies I've worked with</p>
+        </div>
+      </div>
+    </div>
   )
 }
 
