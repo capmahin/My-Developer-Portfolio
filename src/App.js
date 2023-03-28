@@ -6,7 +6,7 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Experience from "./components/Experience";
 
-// app
+
 
 function App() {
   return (
